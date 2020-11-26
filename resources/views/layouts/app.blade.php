@@ -11,13 +11,13 @@
     <nav class="p-6 bg-white flex justify-between mb-6">
         <ul class="flex items-center">
             <li>
-                <a class="p-3" href="">Home</a>
+                <a class="p-3" href="/">Home</a>
             </li>
             <li>
                 <a class="p-3" href=" {{ route('dashboard') }} ">Dashboard</a>
             </li>
             <li>
-                <a class="p-3" href="">Post</a>
+                <a class="p-3" href="{{ route('posts') }}">Post</a>
             </li>
         </ul>
 
@@ -25,7 +25,7 @@
             @auth
 
             <li>
-                <a class="p-3" href="">Ihor</a>
+                <a class="p-3" href="{{ auth()->user()->name }}"></a>
             </li>
 
             <li>
