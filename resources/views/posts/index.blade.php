@@ -3,7 +3,9 @@
 @section('content')
     <div class="flex justify-center">
         <div class="w-8/12 bg-white p-6 rounded-lg ">
-            <form action="{{ route('posts') }}" method="POST">
+
+            
+            <form action="{{ route('posts') }}" method="POST" class="mb-4">
                 @csrf
                 <div class="mb-4">
                     <label for="body" class="sr-only">Body</label>
@@ -23,6 +25,16 @@
                 font-medium">Post</button>
                 </div>
             </form>
+           
+            @if($posts->count())
+                @foreach ($posts as $post)
+                    <x-post :post="$post" />
+                @endforeach
+
+                {{ $posts->links() }}
+            @else
+                <p>There are no posts</p>
+            @endif
         </div>
 
     </div>
