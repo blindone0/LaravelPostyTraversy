@@ -6,14 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Like;
 
-
 class Post extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'body'
-
+        'body',
+        'user_id'
     ];
 
     public function likedBy(User $user)
@@ -31,4 +30,5 @@ class Post extends Model
     {
         return $this->hasMany(Like::class);
     }
+
 }

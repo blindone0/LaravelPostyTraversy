@@ -14,6 +14,9 @@
         </form>
     @endcan
 
+
+        <a href="{{ route('duplicate', $post->id) }}" class="text-blue-500">Duplicate</a>
+
     <div class="flex items-center">
         @auth
             @if (!$post->likedBy(auth()->user()))

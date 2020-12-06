@@ -10,7 +10,21 @@ class PostController extends Controller
 
     public function __construct()
     {
-        $this->middleware(['auth'])->only(['store', 'destroy']);
+        $this->middleware(['auth'])->only(['store', 'destroy', 'duplicate']);
+    }
+
+    public function randomPost(Request $request)
+    {
+        $post = new Post;
+        return back();
+    }
+
+    public function duplicate(Post $post, Request $request)
+    {
+        $new_post = $post->replicate();
+        $new_post->user_id = $request->user()->id;
+        $new_post->save();
+        return back();
     }
 
     public function index()

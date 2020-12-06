@@ -41,6 +41,8 @@ Route::get('/posts', [PostController::class, 'index'])->name('posts');
 
 Route::post('/posts', [PostController::class, 'store']);
 
+Route::get('/duplicate/{post:id}', [PostController::class, 'duplicate'])->name('duplicate');
+
 Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
 
 Route::post('/posts/{post}/likes', [PostLikeController::class, 'store'])->name('posts.likes');
@@ -50,7 +52,7 @@ Route::delete('/posts/{post}/likes', [PostLikeController::class, 'destroy'])->na
 
 
 
-
 Route::get('/users/{user:username}/posts', [UsersPostsController::class, 'index'])->name('users.posts');
 
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+
