@@ -4,7 +4,7 @@
 <div class="mb-4">
     <a href="{{ route('users.posts', $post->user) }}" class="font-bold">{{ $post->user->name }}</a> <span class="text-gray-600 text-sm">{{ $post->created_at->diffForHumans() }}</span>
 
-    <p class="mb-2">{{ \Illuminate\Support\Str::limit($post->body, 256, $end = '...') }}
+    <p class="mb-2">{!! \Illuminate\Support\Str::limit($post->body, 256, $end = '...') !!}
         </p>
         <a href="{{ route('posts.show', $post) }}" class="bg-red-500 text-white px-4 py-2 rounded font-medium">Read</a>
     
