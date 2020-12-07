@@ -31,6 +31,9 @@ class PostController extends Controller
     {
         
         $posts = Post::orderBy('created_at', 'desc')->with(['user', 'likes'])->paginate(20);
+        foreach ($posts as $p) {
+            $p->increment('views', '1');
+        }
         return view('posts.index', [
             "posts" => $posts
         ]);

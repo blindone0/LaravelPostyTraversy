@@ -34,5 +34,6 @@
         @endauth
 
         <span>{{ $post->likes->count() }} {{ Str::plural('like', $post->likes->count()) }}</span>
+        <span class="m-1 p-1">{{ $post->views }} {{ Str::plural('view', $post->views) }}</span>
     </div>
 </div>
