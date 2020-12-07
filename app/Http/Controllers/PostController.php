@@ -31,9 +31,6 @@ class PostController extends Controller
     {
         
         $posts = Post::orderBy('created_at', 'desc')->with(['user', 'likes'])->paginate(20);
-        foreach ($posts as $p) {
-            $p->increment('views', '1');
-        }
         return view('posts.index', [
             "posts" => $posts
         ]);
@@ -41,6 +38,7 @@ class PostController extends Controller
 
     public function show(Post $post)
     {
+        $post->increment('views', '1');
         return view('posts.show', [
             'post' => $post 
         ]);

@@ -4,9 +4,9 @@
 <div class="mb-4">
     <a href="{{ route('users.posts', $post->user) }}" class="font-bold">{{ $post->user->name }}</a> <span class="text-gray-600 text-sm">{{ $post->created_at->diffForHumans() }}</span>
 
-    <p class="mb-2">{{ \Illuminate\Support\Str::limit($post->body, 256, $end = '...') }}
+    <p class="mb-2">{{ $post->body }}
         </p>
-        <a href="{{ route('posts.show', $post) }}" class="bg-red-500 text-white px-4 py-2 rounded font-medium">Read</a>
+
     
     @can('delete', $post)
         <form action="{{ route('posts.destroy', $post) }}" method="post">
@@ -38,4 +38,4 @@
         <span>{{ $post->likes->count() }} {{ Str::plural('like', $post->likes->count()) }}</span>
         <span class="m-1 p-1">{{ $post->views }} {{ Str::plural('view', $post->views) }}</span>
     </div>
-</div>
+</div> 

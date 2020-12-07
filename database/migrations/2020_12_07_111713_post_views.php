@@ -14,7 +14,7 @@ class PostViews extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->bigInteger('views');
+            $table->bigInteger('views')->unsigned()->nullable();
         });
     }
 
