@@ -55,6 +55,7 @@ class PostController extends Controller
 
         $post = $request->user()->posts()->create($request->only('body', 'title'));
         $hashtags_str = $request->hashtags;
+        $hashtags_str = strtolower($hashtags_str);
         $hastags_arr = explode(" ", $hashtags_str);
         $hastags_arr = array_unique($hastags_arr);
         $hastags_arr = array_filter($hastags_arr, fn($value) => !is_null($value) && $value !== '');
