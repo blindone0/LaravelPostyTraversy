@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Models\Hashtag;
 
 class PostController extends Controller
 {
@@ -48,10 +49,28 @@ class PostController extends Controller
     {
         
         $this->validate($request, [
-            'body' => 'required'
+            'body' => 'required',
+            'title' => 'required'
         ]);
 
-        $request->user()->posts()->create($request->only('body'));
+        $post = $request->user()->posts()->create($request->only('body', 'title'));
+        $hashtags_str = $request->hashtags;
+        $hastags_arr = explode(" ", $hashtags_str);
+        $hastags_arr = array_unique($hastags_arr);
+        $hastags_arr = array_filter($hastags_arr, fn($value) => !is_null($value) && $value !== '');
+        foreach($hastags_arr as $a){
+            $hash = Hashtag::firstWhere('hashtag', $a);
+            if(!$hash){
+                $hashtag = new Hashtag();
+                $hashtag->hashtag = $a;
+                $hashtag->posts()->attach($hashtag->id);
+                $hashtag->save();
+            }else{
+                $hastag = $hash;
+            }
+            $post->hashtags()->attach($hashtag->id);
+        }
+        dd($hashtags_str);
 
         return back();
     }

@@ -5,14 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Like;
+use Laravel\Scout\Searchable;
+use App\Models\Hashtag;
 
 class Post extends Model
 {
+    use Searchable;
     use HasFactory;
 
     protected $fillable = [
         'body',
-        'user_id'
+        'user_id',
+        'title',
     ];
 
     public function likedBy(User $user)
@@ -31,4 +35,9 @@ class Post extends Model
         return $this->hasMany(Like::class);
     }
 
+
+    public function hashtags()
+    {
+        return $this->belongsToMany(Hashtag::class);
+    }
 }

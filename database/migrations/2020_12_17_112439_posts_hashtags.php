@@ -20,11 +20,11 @@ class PostsHashtags extends Migration
         Schema::create('hashtags', function (Blueprint $table){
             $table->id();
             $table->timestamps();
-            $table->string('hashtag');
+            $table->string('hashtag')->unique();
 
         });
 
-        Schema::create('posts_hashtags', function (Blueprint $table){
+        Schema::create('hashtag_post', function (Blueprint $table){
             $table->foreignId('hashtag_id')->constrained()->onDelete('cascade');
             $table->foreignId('post_id')->constrained()->onDelete('cascade');
         });
@@ -43,6 +43,6 @@ class PostsHashtags extends Migration
 
         Schema::dropIfExists('hashtags');
 
-        Schema::dropIfExists('psts_hashtags');
+        Schema::dropIfExists('hashtag_post');
     }
 }
