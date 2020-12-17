@@ -9,17 +9,17 @@
                 @csrf
                 <div class="mb-4">
                     <label for="title" class="sr-only">Title</label>
-                    <input name="title" id="title" class="bg-gray-100 border-2 w-full mb-2 @error('title') border-red-500 @enderror" placeholder="Title" type="text">
+                    <input name="title" value="{{ old('title') }}" id="title" class="bg-gray-100 border-2 w-full mb-2 @error('title') border-red-500 @enderror" placeholder="Title" type="text">
                     @error('title')
                     <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}
                     </div>
                     @enderror
                     <label for="hashtags" class="sr-only">Hashtags</label>
-                    <input name="hashtags" id="hashtags" class="bg-gray-100 border-2 w-full mb-2" placeholder="Hashtags" type="text">
+                    <input name="hashtags" id="hashtags" value="{{ old('hashtags') }}" class="bg-gray-100 border-2 w-full mb-2" placeholder="Hashtags" type="text">
 
                     <label for="body" class="sr-only">Body</label>
-                    <textarea name="body" id="body" cols="30" rows="4" class="bg-gray-100 border-2 w-full p-4 lounded-lg @error('body') border-red-500 @enderror"
+                    <textarea name="body" id="body" cols="30" rows="4" value="{{ old('body') }} class="bg-gray-100 border-2 w-full p-4 lounded-lg @error('body') border-red-500 @enderror"
                     placeholder="Post something!">
 
                     </textarea>

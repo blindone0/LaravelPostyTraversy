@@ -67,7 +67,7 @@ class PostController extends Controller
                 $hashtag->posts()->attach($hashtag->id);
                 $hashtag->save();
             }else{
-                $hastag = $hash;
+                $hashtag = $hash;
             }
             $post->hashtags()->attach($hashtag->id);
         }
