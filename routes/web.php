@@ -20,6 +20,8 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+Route::get("/home/{post}", [HomeController::class, 'postsByHash'])->name('postsByHash');
+
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
