@@ -71,7 +71,6 @@ class PostController extends Controller
             }
             $post->hashtags()->attach($hashtag->id);
         }
-        dd($hashtags_str);
 
         return back();
     }
