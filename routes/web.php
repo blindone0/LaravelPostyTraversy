@@ -29,7 +29,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
 Route::get('/', function () {
-    route('home');
+return redirect()->route('home');
 });
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
