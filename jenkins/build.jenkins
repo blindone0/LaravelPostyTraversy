@@ -1,0 +1,15 @@
+pipeline {
+  agent { label 'master' }
+  options {
+    skipDefaultCheckout true
+  }
+  stages {
+    stage('commit_stage') {
+      steps {
+          dir("/usr/local/www/nginx-dist/LaravelPostyTraversy/") {
+            sh 'git pull'
+            }
+      }
+    }
+  }
+}
