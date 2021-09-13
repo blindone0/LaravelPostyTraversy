@@ -1,7 +1,7 @@
 
 @props(['post' => $post])
 
-<article class="flex flex-col shadow my-4">
+<article class="flex flex-col w-8 shadow my-4">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75">
                     {{-- <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=1"> --}}
