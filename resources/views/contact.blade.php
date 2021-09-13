@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="w-full max-w-xs flex flex-col items-center py-12">
+    <div class="flex flex-col h-screen my-auto items-center bgimg bg-cover">
 
         <!-- Success message -->
         @if(Session::has('success'))
