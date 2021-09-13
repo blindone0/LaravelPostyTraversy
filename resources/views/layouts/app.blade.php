@@ -99,7 +99,7 @@
                 <a href="#" class="uppercase px-3">Terms & Conditions</a>
                 <a href="#" class="uppercase px-3">Contact Us</a>
             </div>
-            <div class="uppercase pb-6">&copy; 91.200.234.92</div>
+            <div class="uppercase pb-6">&copy; ihor.live</div>
         </div>
     </footer>
 
