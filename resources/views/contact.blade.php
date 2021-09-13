@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="w-full max-w-xs">
+    <div class="w-full max-w-xs content-center">
 
         <!-- Success message -->
         @if(Session::has('success'))
@@ -64,6 +64,7 @@
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
                 <label class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                <hr>
                 <textarea class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="message" id="message"
                     rows="4"></textarea>
         
