@@ -18,7 +18,7 @@
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
                 <label>Name</label>
-                <input class="form-control appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
+                <input class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
         
                 <!-- Error -->
                 @if ($errors->has('name'))
@@ -30,7 +30,7 @@
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
                 <label>Email</label>
-                <input  type="email" class="form-control appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="email" id="email">
+                <input  type="email" class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="email" id="email">
         
                 @if ($errors->has('email'))
                 <div class="error">
@@ -41,7 +41,7 @@
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
                 <label>Phone</label>
-                <input type="text" class="form-control appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
+                <input type="text" class="form-control appearance-none border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
         
                 @if ($errors->has('phone'))
                 <div class="error">
@@ -50,9 +50,9 @@
                 @endif
             </div>
         
-            <div class="form-group">
+            <div class="form-group flex items-center border-b border-teal-500 py-2">
                 <label>Subject</label>
-                <input type="text" class="form-control appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="subject"
+                <input type="text" class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="subject"
                     id="subject">
         
                 @if ($errors->has('subject'))
@@ -62,9 +62,9 @@
                 @endif
             </div>
         
-            <div class="form-group">
+            <div class="form-group flex items-center border-b border-teal-500 py-2">
                 <label>Message</label>
-                <textarea class="form-control appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="message" id="message"
+                <textarea class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="message" id="message"
                     rows="4"></textarea>
         
                 @if ($errors->has('message'))
