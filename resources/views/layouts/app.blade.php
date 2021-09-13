@@ -8,7 +8,7 @@
     <meta name="description" content="">
 
     <!-- Tiny mce editor -->
-    <script src="https://cdn.tiny.cloud/1/80kxb4p6o6lyv0mwc7219rm896octna5xunlsymnpo3ati4s/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/ffdcq73jbxynkuszyrpmp1xaiqmxeb9i5e0qhsf0y6qhe35p/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
     <!-- Tailwind -->
     <!-- <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> -->
