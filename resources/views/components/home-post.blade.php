@@ -1,12 +1,12 @@
 
 @props(['post' => $post])
 
-<article class="flex flex-col shadow my-4">
+<article class="shadow my-4">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75">
                     {{-- <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=1"> --}}
                 </a>
-                <div class="bg-white flex flex-col justify-start p-6">
+                <div class="bg-white justify-start p-6">
                     @foreach ($post->hashtags as $tag)
                         <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">{{ $tag->hashtag }}</a>
                     @endforeach
