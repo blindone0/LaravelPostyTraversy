@@ -3,7 +3,11 @@
 @section('content')
     <div class="flex justify-center">
         <div class="w-8/12 bg-white p-6 rounded-lg ">
-            Dashboard
+            <h1>Intelligent Webapps for Your Business Logic</h1>
+            <hr>
+            <p>Hello, and welcome to the blog of passionated software developer, Ihor. If you would like to hire me as a developer or just ask for free IT cosultation you are welcome to fill contact form. And I'll get in touch with you as soon as possible. Have a nice day</p>
+            <h5>providing simplicity </h5>
+            
         </div>
 
     </div>
