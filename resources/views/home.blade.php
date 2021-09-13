@@ -9,7 +9,7 @@
                 Igor's blog
             </a>
             <p class="text-lg text-gray-600">
-                Daily tech blogpost
+                Daily tech blogpost for gay (IT) guys
             </p>
         </div>
     </header>
