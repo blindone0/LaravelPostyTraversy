@@ -34,8 +34,9 @@
             <nav>
                 <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
                     <li><a class="hover:text-gray-200 hover:underline px-4" href="{{ route('home') }}">Home</a></li>
-                    <li><a class="hover:text-gray-200 hover:underline px-4" href=" {{ route('dashboard') }} ">Dashboard</a></li>
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href=" {{ route('dashboard') }} ">Services</a></li>
                     <li><a class="hover:text-gray-200 hover:underline px-4" href="{{ route('posts') }}">Post</a></li>
+                    <li><a class="hover:text-red-200 hover:underline px-4" href="{{ route('contact.store') }}">Get In Touch</a></li>
                 </ul>
             </nav>
 
