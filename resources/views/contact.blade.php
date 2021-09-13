@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="flex flex-col h-screen my-auto items-center bgimg bg-cover">
+    <div class="flex flex-col m-40 my-auto items-center bgimg bg-cover">
 
         <!-- Success message -->
         @if(Session::has('success'))
@@ -12,7 +12,7 @@
             </div>
         @endif
 
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="" method="post" action="{{ route('contact.store') }}">
+        <form class="bg-white shadow-md rounded m-20 px-8 pt-6 pb-8 mb-4" action="" method="post" action="{{ route('contact.store') }}">
 
             @csrf
         
