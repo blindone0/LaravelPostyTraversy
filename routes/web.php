@@ -9,6 +9,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostLikeController;
 use App\Http\Controllers\UsersPostsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactUsFormController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,4 +57,8 @@ Route::delete('/posts/{post}/likes', [PostLikeController::class, 'destroy'])->na
 Route::get('/users/{user:username}/posts', [UsersPostsController::class, 'index'])->name('users.posts');
 
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+
+Route::get('/contact', [ContactUsFormController::class, 'createForm']);
+
+Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
 
