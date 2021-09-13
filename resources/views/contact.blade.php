@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="w-full max-w-xs content-center">
+    <div class="w-full max-w-xs flex flex-col items-center py-12">
 
         <!-- Success message -->
         @if(Session::has('success'))
