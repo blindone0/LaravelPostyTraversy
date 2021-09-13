@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex justify-center">
+    <div class="flex justify-center mt-8 mb-20">
         <div class="w-8/12 bg-white p-6 rounded-lg ">
             <h1>Intelligent Webapps for Your Business Logic</h1>
             <hr>
