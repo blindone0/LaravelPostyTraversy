@@ -6,10 +6,10 @@
     <header class="w-full container mx-auto">
         <div class="flex flex-col items-center py-12">
             <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="#">
-                Igor's blog
+                Ihor's blog
             </a>
             <p class="text-lg text-gray-600">
-                Daily tech blogpost for gay (IT) guys
+                Daily tech blogpost for (IT) guys
             </p>
         </div>
     </header>
@@ -81,7 +81,7 @@
                     <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=5">
                     <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=6">
                 </div>
-                <a href="#" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                <a href="https://www.instagram.com/zkixcidstgbnm/" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
                     <i class="fab fa-instagram mr-2"></i> Follow @zkixcidstgbnm
                 </a>
             </div>
