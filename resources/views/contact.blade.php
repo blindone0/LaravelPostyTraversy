@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="container mt-5">
+    <div class="w-full max-w-xs">
 
         <!-- Success message -->
         @if(Session::has('success'))
@@ -12,7 +12,7 @@
             </div>
         @endif
 
-        <form class="w-full max-w-sm" action="" method="post" action="{{ route('contact.store') }}">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="" method="post" action="{{ route('contact.store') }}">
 
             @csrf
         
