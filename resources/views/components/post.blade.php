@@ -19,7 +19,7 @@
 
         <a href="{{ route('duplicate', $post->id) }}" class="text-blue-500">Duplicate</a>
 
-    <div class="items-center">
+    <div class="flex items-center">
         @auth
             @if (!$post->likedBy(auth()->user()))
                 <form action="{{ route('posts.likes', $post) }}" method="post" class="mr-1">
