@@ -15,7 +15,7 @@
                     <p href="#" class="text-sm pb-3">
                         By <a href="{{ route('users.posts', $post->user) }}" class="font-semibold hover:text-gray-800">{{ $post->user->name }}</a>, Published {{ $post->created_at->diffForHumans() }}
                     </p>
-                    <p class="pb-6">{!! substr($post->body, 0,  130) !!} ...</p>
+                    <p class="pb-6">{!! strip_tags(substr($post->body, 0,  130)) !!} ...</p>
                     <a href="{{ route('posts.show', $post) }}" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
                     <div class=" items-center text-right">
         
