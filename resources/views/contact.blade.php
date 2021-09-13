@@ -17,7 +17,7 @@
             @csrf
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
-                <label>Name</label>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Name</label>
                 <input class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
         
                 <!-- Error -->
@@ -29,7 +29,7 @@
             </div>
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
-                <label>Email</label>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>
                 <input  type="email" class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="email" id="email">
         
                 @if ($errors->has('email'))
@@ -40,7 +40,7 @@
             </div>
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
-                <label>Phone</label>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Phone</label>
                 <input type="text" class="form-control appearance-none border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
         
                 @if ($errors->has('phone'))
@@ -51,7 +51,7 @@
             </div>
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
-                <label>Subject</label>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Subject</label>
                 <input type="text" class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="subject"
                     id="subject">
         
@@ -63,7 +63,7 @@
             </div>
         
             <div class="form-group flex items-center border-b border-teal-500 py-2">
-                <label>Message</label>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Message</label>
                 <textarea class="form-control appearance-none  border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none {{ $errors->has('phone') ? 'error' : '' }}" name="message" id="message"
                     rows="4"></textarea>
         
