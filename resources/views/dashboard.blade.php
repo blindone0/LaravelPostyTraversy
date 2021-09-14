@@ -8,7 +8,7 @@
             <p class="mt-2 mb-2">Hello, and welcome to the blog of passionated software developer, Ihor. If you would like to hire me as a developer or just ask for free IT cosultation you are welcome to fill contact form. And I'll get in touch with you as soon as possible. Have a nice day</p>
             <h5 class="test-lg">providing simplicity </h5>
             <hr>
-            <a href="{{ route('downloadFile', "robots.txt") }}" download>Download my resume</a>
+            <a href="{{ route('downloadFile', "robots.txt") }}">Download my resume</a>
             
         </div>
 
