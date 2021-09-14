@@ -9,6 +9,6 @@ class StreamController extends Controller
     //streamLive
     public function streamLive()
     {
-        return view('streamLive');
+        return view('stream');
     }
 }
