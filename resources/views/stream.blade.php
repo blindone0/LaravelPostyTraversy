@@ -17,7 +17,7 @@
             poster="MY_VIDEO_POSTER.jpg"
             data-setup="{}"
           >
-            <source src="http://live.ihor.live/live.m3u8" type="appkication/x-mpegURL" />
+            <source src="http://live.ihor.live/live.m3u8" type="application/x-mpegURL" />
             <p class="vjs-no-js">
               To view this video please enable JavaScript, and consider upgrading to a
               web browser that
