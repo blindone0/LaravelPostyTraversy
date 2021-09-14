@@ -9,8 +9,6 @@ use \Illuminate\Http\Response;
 class DownloadFileController extends Controller
 {
     function downloadFile($file_name){
-        $file=Storage::disk('public')->get($file_name);
-        dd($file);
-        return Storage::download($file);
+        return Storage::download('app/public/robots.txt');
     }
 }
