@@ -9,7 +9,7 @@ use \Illuminate\Http\Response;
 class DownloadFileController extends Controller
 {
     function downloadFile($file_name){
-        
+        dd(Storage::download($file_name));
         return Storage::download($file_name);
     }
 }
