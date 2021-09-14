@@ -9,7 +9,7 @@
             <h5 class="test-lg">providing simplicity </h5>
             <hr>
             <div class="text-right">
-            <a class="hover:underline shadow-inner ring-4 pt-2 border" href="{{ route('downloadFile', "cvIhorRadetskyi.docx") }}">Download my resume</a>
+            <a class="hover:underline shadow-inner ring-4 mt-2 border" href="{{ route('downloadFile', "cvIhorRadetskyi.docx") }}">Download my resume</a>
             </div>
         </div>
 
