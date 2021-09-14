@@ -28,7 +28,7 @@
           </video> --}}
           <video id="my_video_1" id="my-video" class="video-js" controls preload="auto" width="640" height="268" 
           data-setup='{}'>
-            <source src="http://live.ihor.live/live.m3u8" type="application/x-mpegURL">
+            <source src="https://live.ihor.live/live.m3u8" type="application/x-mpegURL">
           </video>
         
           <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
