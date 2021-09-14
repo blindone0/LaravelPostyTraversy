@@ -98,7 +98,7 @@
                 <a href="{{ route('dashboard') }}" class="uppercase px-3">About Me</a>
                 <a href{{ route('home') }}" class="uppercase px-3">Blog</a>
                 <a href="{{ route('contact.store') }}" class="uppercase px-3">Contact Me</a>
-                <a href="{{ route('stream') }}" class="uppercase px-3">live stream</a>
+                <a href="{{ route('streamLive') }}" class="uppercase px-3">live stream</a>
             </div>
             <div class="uppercase pb-6">&copy; ihor.live</div>
         </div>
