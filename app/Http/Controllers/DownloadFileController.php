@@ -9,7 +9,7 @@ use \Illuminate\Http\Response;
 class DownloadFileController extends Controller
 {
     function downloadFile($file_name){
-        $path = storage_path('app/public/');
+        $path = storage_path();
         return Storage::download($path, $file_name);
     }
 }
