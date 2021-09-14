@@ -10,7 +10,7 @@ class DownloadFileController extends Controller
 {
     function downloadFile($file_name){
         $file = Storage::disk('public')->get($file_name);
-  
+        dd($file);
         return (new Response($file, 200));
     }
 }
