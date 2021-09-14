@@ -10,7 +10,6 @@ class DownloadFileController extends Controller
 {
     function downloadFile($file_name){
         $file = "app/public/robots.txt";
-        dd($file);
-        return (new Response($file, 200));
+        return Response::download($file);
     }
 }
