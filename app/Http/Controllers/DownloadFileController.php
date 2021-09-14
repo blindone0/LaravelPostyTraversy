@@ -9,7 +9,7 @@ use \Illuminate\Http\Response;
 class DownloadFileController extends Controller
 {
     function downloadFile($file_name){
-        $file = "app/public/robots.txt";
+        $file = "robots.txt";
         return Storage::download($file);
     }
 }
