@@ -4,7 +4,6 @@
     <div class="flex justify-center">
         <div class="w-full bg-white p-6 rounded-lg ">
 
-            
             <form action="{{ route('posts') }}" method="POST" class="mb-4">
                 @csrf
                 <div class="mb-4">
