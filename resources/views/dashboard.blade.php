@@ -9,7 +9,7 @@
             <h5 class="test-lg">providing simplicity </h5>
             <hr>
             <div class="text-right">
-            <a href="{{ route('downloadFile', "cvIhorRadetskyi.docx") }}">Download my resume</a>
+            <a class="hover:underline" href="{{ route('downloadFile', "cvIhorRadetskyi.docx") }}">Download my resume</a>
             </div>
         </div>
 
