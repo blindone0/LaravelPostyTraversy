@@ -9,6 +9,6 @@ use \Illuminate\Http\Response;
 class DownloadFileController extends Controller
 {
     function downloadFile($file_name){
-        return Storage::download('public/die.exe');
+        return Storage::download('public/'.$file_name);
     }
 }
