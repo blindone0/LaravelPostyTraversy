@@ -11,6 +11,7 @@ use App\Http\Controllers\UsersPostsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\DownloadFileController;
+use App\Http\Controllers\StreamController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
