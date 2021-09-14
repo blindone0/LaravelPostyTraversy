@@ -7,7 +7,7 @@
 <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
     <div class="flex justify-center mt-8 mb-20">
         <div class="w-full bg-white p-6 rounded-lg ">
-            <video
+            {{-- <video
             id="my-video"
             class="video-js"
             controls
@@ -25,6 +25,10 @@
                 >supports HTML5 video</a
               >
             </p>
+          </video> --}}
+          <video id="my_video_1" id="my-video" class="video-js" controls preload="auto" width="640" height="268" 
+          data-setup='{}'>
+            <source src="http://live.ihor.live/live.m3u8" type="application/x-mpegURL">
           </video>
         
           <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
