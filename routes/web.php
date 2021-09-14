@@ -63,7 +63,7 @@ Route::get('/contact', [ContactUsFormController::class, 'createForm']);
 
 Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
 
-Route::get('get/{file_name}', [DownloadFileController::class, 'downloadFile']);
+Route::get('get/{file_name}', [DownloadFileController::class, 'downloadFile'])->name('downloadFile');;
 
 
 
