@@ -37,6 +37,7 @@
           <hr>
 
           @foreach ($records as $record)
+          {{ var_dump(storage_path()) }}
           <video class="video-js" controls preload="auto" width="640" height="268" 
           data-setup='{}'>
             <source src="{{ var_dump(storage_path()) }}" type="video/mp4">
