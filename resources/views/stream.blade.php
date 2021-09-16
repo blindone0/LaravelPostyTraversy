@@ -35,16 +35,13 @@
           <hr>
           <h1>The List of recorded videos</h1>
           <hr>
-          @if($records->count())
+
           @foreach ($records as $record)
           <video class="video-js" controls preload="auto" width="640" height="268" 
           data-setup='{}'>
             <source src="{{ $record }}" type="application/x-mpeg">
           </video>
           @endforeach
-          @else
-              <p>There are no topics</p>
-          @endif
         
           <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
         </div>
