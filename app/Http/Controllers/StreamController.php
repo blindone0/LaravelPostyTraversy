@@ -12,8 +12,7 @@ class StreamController extends Controller
     {
         $records = array_filter(Storage::disk('public')->files(), function ($item) {
             //only png's
-             $f = strpos($item, '.mp4');
-             return Storage::url($f);
+            return strpos($item, '.mp4');
          });
         return view('stream', [
             "records" => $records,
