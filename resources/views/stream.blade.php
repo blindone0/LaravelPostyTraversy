@@ -1,4 +1,3 @@
-@props(['records' => $records])
 
 @extends('layouts.app')
 
