@@ -14,7 +14,6 @@ class StreamController extends Controller
             //only png's
             return strpos($item, '.mp4');
          });
-         dd($records);
         return view('stream', [
             "records" => $records,
         ]);
