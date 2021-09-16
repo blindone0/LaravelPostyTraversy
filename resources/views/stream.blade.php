@@ -39,7 +39,7 @@
           @foreach ($records as $record)
           <video class="video-js" controls preload="auto" width="640" height="268" 
           data-setup='{}'>
-            <source src="{{ storage_path('public/$record') }}" type="video/mp4">
+            <source src="{{ var_dump(storage_path()) }}" type="video/mp4">
           </video>
           @endforeach
         
