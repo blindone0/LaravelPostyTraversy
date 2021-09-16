@@ -37,9 +37,10 @@
           <hr>
 
           @foreach ($records as $record)
+          {{var_dump(asset('css/app.css'))}}
           <video class="video-js" controls preload="auto" width="640" height="268" 
           data-setup='{}'>
-            <source src="{{ asset($record) }}" type="video/mp4">
+            <source src="{{ Storage::temporaryUrl($record) }}" type="video/mp4">
           </video>
           @endforeach
         
