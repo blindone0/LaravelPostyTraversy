@@ -10,7 +10,7 @@ class StreamController extends Controller
     //streamLive
     public function streamLive()
     {
-        $records = array_filter(Storage::disk('public')->files(), function ($item) {
+        $records = array_filter(Storage::allFiles(public_path()), function ($item) {
             //only png's
             return strpos($item, '.mp4');
          });
