@@ -38,6 +38,8 @@
 
           @foreach ($records as $record)
           <hr>
+          {{ $record }}
+          <hr>
           <video class="video-js" controls preload="auto" width="640" height="268" 
           data-setup='{}'>
             <source src="{{ asset($record) }}" type="video/mp4">
