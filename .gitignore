@@ -1,2 +1,6 @@
 .env
 vendor/
+public/*.mp4
+public/*.flv
+storage/app/public/*.mp4
+storage/app/public/*.flv
