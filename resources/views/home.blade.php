@@ -8,14 +8,14 @@
                 Ihor's blog
             </a>
             <p class="text-lg text-gray-600">
-                Daily tech blogpost for (IT) guys
+                Daily tech blogpost on INTERNET
             </p>
         </div>
     </header>
 
         <!-- Topic Nav -->
-    <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
-        <div class="block sm:hidden">
+    <nav class="border-t border-b bg-gray-50" x-data="{ open: false }">
+        <div class="">
             <a
                 href="#"
                 class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
@@ -24,18 +24,16 @@
                 Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
             </a>
         </div>
-        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
-            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2 overflow-x-auto">
+            <div class="text-center">
                 @if($hashtags->count())
                     @foreach ($hashtags as $tag)
-                        <a href="{{route('postsByHash', $tag)}}" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">{{$tag->hashtag}}</a>
+                        <a href="{{route('postsByHash', $tag)}}" class="hover:bg-gray-400 rounded px-1 mx-0">{{$tag->hashtag}}</a>
                     @endforeach
                     @else
                         <p>There are no topics</p>
                 @endif
                 
             </div>
-        </div>
     </nav>
 
     <div class="container mx-auto flex flex-wrap py-6">
